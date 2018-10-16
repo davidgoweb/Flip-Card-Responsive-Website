@@ -1,0 +1,162 @@
+ @import url('https://fonts.googleapis.com/css?family=Mali');
+	*{margin:0;padding:0;}
+    .bg-color1{
+    	background: #16a085;
+    }
+    .text-color1{
+    	color:#16a085;
+    }
+    body {
+        color: #222;
+        font-family: Mali
+    }
+    
+    /* flip card */
+    .flip-card {
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        display: block;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width: 600px){
+        .flip-card{
+            width: 100%;
+            height: 100%;
+        }   
+    }
+    
+
+    .mykh-card {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: all 600ms;
+        transition: all 600ms;
+        z-index: 20;
+    }
+
+    .mykh-card > div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #eee;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 2px;
+    }
+
+    .mykh-card .back-card {
+        background: #222;
+        color: #FFF;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
+    .flip-card:hover .mykh-card {
+        -webkit-transform: rotateY(3deg);
+        transform: rotateY(3deg);
+        box-shadow: 0 20px 20px rgba(50,50,50,.2);
+    }
+
+    .v-flip {
+        display: none;
+    }
+
+    .v-flip:checked + .mykh-card {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+    }
+
+    .flip-card:hover .v-flip:checked + .mykh-card {
+        transform: rotateY(175deg);
+        -webkit-transform: rotateY(175deg);
+        box-shadow: 0 20px 20px rgba(255,255,255,.2);
+    }
+
+
+
+    /* Custom styling CSS*/
+    .ava-picture{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border-radius: 10px;
+        border:5px solid #16a085;
+    }
+    .ava-picture img{
+        width: 100px;
+        border-radius:
+    }
+    .title_1{
+        color: #16a085;
+        font-size: 40px;
+    }
+    .heading{
+        border-bottom: 3px solid #16a085;
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+    .heading p{
+        font-size: 15px
+    }
+    .content{
+    }
+    .content p {
+        padding: 10px 25px
+    }
+    .corner-text{
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        bottom:20px;
+        right: 20px;
+    }
+
+    .bg-gh,.bg-fb,.bg-li{
+        padding: 0 34px;
+        display: block;
+        line-height: 125px;
+        color: #fff;
+        font-size: 50px;
+        opacity: 1;
+        transition: ease all 0.3s
+    }
+    .bg-gh{
+        background:grey;
+    }
+    .bg-fb{
+        background: #3b5998;
+    }
+    .bg-li{
+        background: #0e76a8
+    }
+
+
+    .back-card a:hover {
+    	opacity: 0.5
+    }
+    .back-card .ava-picture{
+    	width: 100%;
+    	height: 250px;
+    	border:0px;
+    	border-radius: 0px
+    }
+    .back-card .ava-picture img{
+    	width: 100%;
+    }
+
+    .back-card .social{
+    	text-align: center;
+    }
