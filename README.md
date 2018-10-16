@@ -1,5 +1,5 @@
 # Flip-Card-Responsive-Website
-This is a template for personal / profile page
+This is a simple template for personal / profile page
 
 # Reference
 - Icons (https://fontawesome.com/)
