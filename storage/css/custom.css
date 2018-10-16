@@ -130,6 +130,7 @@
         line-height: 125px;
         color: #fff;
         font-size: 50px;
+	text-align:center;
         opacity: 1;
         transition: ease all 0.3s
     }
